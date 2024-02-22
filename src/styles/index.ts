@@ -19,6 +19,11 @@ export const MainContainer = styled.main`
   padding: 0 40px;
   height: 100vh;
   overflow-y: scroll;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0;
+  }
 `
 
 export const Botao = styled.button`
@@ -48,6 +53,10 @@ export const Campo = styled.input`
   color: #666666;
   border-color: #666666;
   width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 100px;
+  }
 `
 
 export const BotaoSalvar = styled(Botao)`

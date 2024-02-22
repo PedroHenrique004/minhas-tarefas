@@ -5,7 +5,7 @@ import { RootReducer } from '../../store'
 import { alteraTermo } from '../../store/reducers/filtro'
 import * as enums from '../../utils/enums/Tarefa'
 import { Botao, Campo } from '../../styles'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 type Props = {
   mostrarFiltros: boolean

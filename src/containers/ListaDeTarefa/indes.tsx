@@ -2,6 +2,7 @@ import Tarefa from '../../components/Tarfefa'
 import { MainContainer, Titulo } from '../../styles'
 import { useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
+import { List } from './styles'
 
 const ListaDeTarefas = () => {
   const { itens } = useSelector((state: RootReducer) => state.tarefas)
@@ -54,7 +55,7 @@ const ListaDeTarefas = () => {
       <Titulo as="p">{mensagem}</Titulo>
       <ul>
         {tarefas.map((t) => (
-          <li key={t.titulo}>
+          <List key={t.titulo}>
             <Tarefa
               id={t.id}
               titulo={t.titulo}
@@ -62,7 +63,7 @@ const ListaDeTarefas = () => {
               status={t.status}
               descricao={t.descricao}
             />
-          </li>
+          </List>
         ))}
       </ul>
     </MainContainer>
